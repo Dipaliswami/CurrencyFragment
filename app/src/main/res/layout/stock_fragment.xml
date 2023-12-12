@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp">
+
+    <TextView
+        android:textSize="30sp"
+        android:text=""
+       app:layout_constraintBaseline_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:id="@+id/txtTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></TextView>
+
+    <TextView
+        android:layout_marginTop="16dp"
+       app:layout_constraintBaseline_toBottomOf="@+id/txtTitle"
+        app:layout_constraintRight_toLeftOf="parent"
+        android:text="Bitcode"
+        android:textSize="20sp"
+        android:id="@+id/txtName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></TextView>
+
+    <TextView
+        android:id="@+id/txtStockVlaue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="535INR"
+        android:textSize="16sp"
+        app:layout_constraintRight_toLeftOf="@id/txtTitle"
+
+        app:layout_constraintStart_toEndOf="@+id/txtName"
+        tools:layout_editor_absoluteY="56dp"></TextView>
+
+    <Button
+        android:id="@+id/btnRefresh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="236dp"
+        android:text="Refresh"
+        app:layout_constraintBaseline_toBottomOf="parent"
+        app:layout_constraintBaseline_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        tools:layout_editor_absoluteY="14dp"></Button>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
